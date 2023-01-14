@@ -9,6 +9,7 @@ import omnifood from "../../resources/images/omnifood.png";
 import booosta from "../../resources/images/booosta.png";
 import metaverse from "../../resources/images/metaverse.png";
 import nexter from "../../resources/images/nexter.png";
+import imdb from "../../resources/images/imdb.png";
 import { AiFillSetting, AiFillGithub } from "react-icons/ai";
 
 export const Pricing = () => {
@@ -49,6 +50,14 @@ export const Pricing = () => {
       tools: "ReactJs",
     },
     {
+      description: "IMDB movie app",
+      linkto: "https://pleasantvik-movies.netlify.app/",
+      delay: 500,
+      image: imdb,
+      tools: "ReactJs",
+      git: "https://github.com/pleasantvik/movies",
+    },
+    {
       description: "Real Estae",
       linkto: "https://adedayo-nextergrid.netlify.app/",
       delay: 500,
@@ -82,7 +91,7 @@ export const Pricing = () => {
       delay: 0,
       image: task,
       tools: "HTML, CSS, JS",
-      git: "",
+      git: "https://github.com/pleasantvik/mytodo",
     },
     {
       description: "Pig game",
