@@ -94,11 +94,12 @@
   text-align: center;
   color: #ffa800;
   font-size: 4rem;
+  text-transform: uppercase;
 }
 
 .p {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #ffffff;
 }
 
@@ -119,4 +120,14 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 4rem;
+}
+
+@media (max-width: 38.75em) {
+  .h2 {
+    font-size: 2rem;
+  }
+
+  .p {
+    font-size: 1.8rem;
+  }
 }

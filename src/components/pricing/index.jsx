@@ -6,68 +6,65 @@ import expenseFilter from "../../resources/images/filter.png";
 import task from "../../resources/images/task.png";
 import pig from "../../resources/images/pig.png";
 import omnifood from "../../resources/images/omnifood.png";
-import { AiFillSetting } from "react-icons/ai";
+import booosta from "../../resources/images/booosta.png";
+import metaverse from "../../resources/images/metaverse.png";
+import nexter from "../../resources/images/nexter.png";
+import { AiFillSetting, AiFillGithub } from "react-icons/ai";
 
 export const Pricing = () => {
   const fullStack = [
     {
-      price: 150,
+      position: "Booosta",
+      description: "A Retail Management system app for businesses.",
+      linkto: "https://booosta-dev.netlify.app",
+      delay: 500,
+      image: booosta,
+      tools: "Reactjs, React-query, Python,Django,MUI",
+      git: "https://github.com/Prunedge-Dev-Team/rms-web",
+    },
+    {
       position: "Forkify",
       description: "A food recipe application.",
       linkto: "https://pleasantvik-forkifyjs.netlify.app/",
       delay: 500,
       image: forkify,
-      tools: "HTML, CSS, JS,axios,Parcel,Express",
-    },
-    {
-      price: 100,
-      position: "Bella ",
-      description: "A landing page for a food web app",
-      linkto: "https://pleasantvik-bella.netlify.app/",
-      delay: 0,
-      image: bella,
-      tools: "HTML, CSS, JS",
-    },
-
-    {
-      price: 200,
-      position: "Omnifood",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, numquam.",
-      linkto: "http://sales/c",
-      delay: 500,
-      image: omnifood,
-      tools: "HTML, CSS, JS",
+      tools: "HTML, CSS, JS,Express",
+      git: "https://github.com/pleasantvik/forkifyjs",
     },
   ];
   const simpleLandingPage = [
     {
-      price: 100,
+      description: "An AI Food Company Landing Page",
+      linkto: "https://pleasantvik-omnifood.netlify.app/",
+      delay: 500,
+      image: omnifood,
+      tools: "HTML, CSS, JS",
+      git: "https://github.com/pleasantvik/omnifood",
+    },
+    {
+      description: "Metaverse World",
+      linkto: "https://metaversus-app.vercel.app/",
+      delay: 0,
+      image: metaverse,
+      tools: "ReactJs",
+    },
+    {
+      description: "Real Estae",
+      linkto: "https://adedayo-nextergrid.netlify.app/",
+      delay: 500,
+      image: nexter,
+      tools: "ReactJs",
+      git: "https://github.com/pleasantvik/nexter",
+    },
+
+    {
       position: "Bella ",
       description: "A landing page for a food web app",
       linkto: "https://pleasantvik-bella.netlify.app/",
       delay: 500,
       image: bella,
       tools: "HTML, CSS, JS",
-    },
-    {
-      price: 150,
-      position: "Forkify",
-      description: "A food recipe application.",
-      linkto: "http://sales/b",
-      delay: 0,
-      image: forkify,
-      tools: "HTML, CSS, JS",
-    },
-    {
-      price: 200,
-      position: "Omnifood",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, numquam.",
-      linkto: "http://sales/c",
-      delay: 500,
-      image: omnifood,
-      tools: "HTML, CSS, JS",
+      git: "https://github.com/pleasantvik/bella",
     },
   ];
   const simpleAppAndGame = [
@@ -77,15 +74,15 @@ export const Pricing = () => {
       delay: 500,
       image: expenseFilter,
       tools: "Reactjs",
+      git: "https://github.com/pleasantvik/track-expenses",
     },
     {
-      price: 150,
-      position: "A simple task app",
       description: "A todo task tracking app",
       linkto: "https://pleasanttask.netlify.app/",
       delay: 0,
       image: task,
       tools: "HTML, CSS, JS",
+      git: "",
     },
     {
       description: "Pig game",
@@ -93,6 +90,7 @@ export const Pricing = () => {
       delay: 500,
       image: pig,
       tools: "HTML, CSS, JS",
+      git: "https://github.com/pleasantvik/pig-game",
     },
   ];
   const showBox = () =>
@@ -116,6 +114,11 @@ export const Pricing = () => {
             <button className={classes.link}>
               <a href={box.linkto} target="_blank" rel="noreferrer">
                 View
+              </a>
+            </button>
+            <button className={classes.link}>
+              <a href={box.git} target="_blank" rel="noreferrer">
+                <AiFillGithub />
               </a>
             </button>
           </div>
@@ -145,6 +148,11 @@ export const Pricing = () => {
                 View
               </a>
             </button>
+            <button className={classes.link}>
+              <a href={box.git} target="_blank" rel="noreferrer">
+                <AiFillGithub />
+              </a>
+            </button>
           </div>
         </div>
       </Zoom>
@@ -172,6 +180,11 @@ export const Pricing = () => {
                 View
               </a>
             </button>
+            <button className={classes.link}>
+              <a href={box.git} target="_blank" rel="noreferrer">
+                <AiFillGithub />
+              </a>
+            </button>
           </div>
         </div>
       </Zoom>
@@ -190,11 +203,6 @@ export const Pricing = () => {
             <AiFillSetting className={classes.me} /> My Projects
           </h2>
         </Zoom>
-        <Zoom>
-          <h2>
-            <AiFillSetting className={classes.me} /> Full stack Category
-          </h2>
-        </Zoom>
 
         <div className={classes.pricing_wrapper}>{showBox()}</div>
       </div>
@@ -205,7 +213,7 @@ export const Pricing = () => {
           </h2>
         </Zoom>
 
-        <div className={classes.pricing_wrapper}>{appAndGame()}</div>
+        <div className={classes.pricing_wrapper}>{landingPage()}</div>
       </div>
       <div className={`${classes.center_wrapper} ${classes.pricing_section}`}>
         <Zoom>
@@ -214,7 +222,7 @@ export const Pricing = () => {
           </h2>
         </Zoom>
 
-        <div className={classes.pricing_wrapper}>{landingPage()}</div>
+        <div className={classes.pricing_wrapper}>{appAndGame()}</div>
       </div>
     </div>
   );

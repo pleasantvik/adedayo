@@ -58,6 +58,9 @@
 
 .pricing_inner_wrapper .pricing_buttons {
   text-align: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
 
 @media (max-width: 38.75em) {

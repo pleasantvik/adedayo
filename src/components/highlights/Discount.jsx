@@ -1,7 +1,6 @@
 import classes from "./Discount.module.css";
 import { useState, useEffect } from "react";
 import { Fade, Slide } from "react-awesome-reveal";
-import { MyButton } from "../utils/MyButton";
 import slide from "../../resources/images/slide_me.jpg";
 export const Discount = () => {
   const [start, setStart] = useState(0);
@@ -38,19 +37,22 @@ export const Discount = () => {
           <div className={classes.discount_description}>
             <h3>Hi, I'm Adedayo Victor</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum omnis voluptate reprehenderit, totam animi dicta,
-              dolores maiores sunt a fugit vitae. Blanditiis qui, omnis
-              reiciendis eos est laborum non quis amet corrupti quae dignissimos
-              totam aliquid, accusamus, corporis ex. Vel.
+              I am a highly skilled and experienced frontend developer with
+              strong background in HTML, CSS, Javascript, Typescript, Reactjs.
+              I've worked on a wide range of projects. I am detailed oriented
+              with a focus on creating intuitive and user friendly designs.
             </p>
-            <MyButton
-              text="Purchase tickets"
-              link="https://google.com"
-              size="small"
-              sx={{ background: "#ffa800", color: "#fff" }}
-              iconTicket={true}
-            />
+            <p>
+              I shine well in problem solving with great ability to troubleshoot
+              and resolve issues quickly. I am a great team player with
+              excellent communication skills which makes me a valuable asset to
+              any develpement team.
+            </p>
+            <p>
+              I am excited about the opportunity to use my skills and experience
+              to create innovative and effective frontend solutions for your
+              organization and or any freelance work
+            </p>
           </div>
         </Slide>
       </div>
