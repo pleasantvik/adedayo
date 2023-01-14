@@ -10,6 +10,7 @@ import booosta from "../../resources/images/booosta.png";
 import metaverse from "../../resources/images/metaverse.png";
 import nexter from "../../resources/images/nexter.png";
 import imdb from "../../resources/images/imdb.png";
+import easybank from "../../resources/images/easybank.png";
 import { AiFillSetting, AiFillGithub } from "react-icons/ai";
 
 export const Pricing = () => {
@@ -58,12 +59,20 @@ export const Pricing = () => {
       git: "https://github.com/pleasantvik/movies",
     },
     {
-      description: "Real Estae",
+      description: "Real Estate",
       linkto: "https://adedayo-nextergrid.netlify.app/",
       delay: 500,
       image: nexter,
       tools: "ReactJs",
       git: "https://github.com/pleasantvik/nexter",
+    },
+    {
+      description: "Easy Banking",
+      linkto: "https://pleasantvik-easybanking.netlify.app/",
+      delay: 500,
+      image: easybank,
+      tools: "HTML, CSS, JS",
+      git: "https://github.com/pleasantvik/easybanking",
     },
 
     {
